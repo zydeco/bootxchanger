@@ -72,10 +72,6 @@
 		2800D7FE0CDD0D960027F887 /* bootlogo.act */ = {isa = PBXFileReference; lastKnownFileType = file; name = bootlogo.act; path = Resources/bootlogo.act; sourceTree = "<group>"; };
 		2800D8050CDD0DE70027F887 /* rle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rle.c; sourceTree = "<group>"; };
 		2800D8060CDD0DE70027F887 /* rle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rle.h; sourceTree = "<group>"; };
-		2817B7030DED664900B9D1A1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Dutch; path = Dutch.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2817B7060DED672F00B9D1A1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2817B7080DED674400B9D1A1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2817B70A0DED674D00B9D1A1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		281A7D070D0C4F4200DD6E10 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		281A7D090D0C4F4C00DD6E10 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
 		281A7D0C0D0C4FE700DD6E10 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -414,7 +410,6 @@
 				2829A4C80DBD057F007367D8 /* French */,
 				2876ACFE0DBD2F7F00731E2A /* Italian */,
 				28B560330DEC0528002A561D /* zh_TW */,
-				2817B7080DED674400B9D1A1 /* Dutch */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -430,7 +425,6 @@
 				2829A4BE0DBD0548007367D8 /* French */,
 				2876ACF10DBD2EDE00731E2A /* Italian */,
 				28B560320DEC0528002A561D /* zh_TW */,
-				2817B7030DED664900B9D1A1 /* Dutch */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -446,7 +440,6 @@
 				2829A4C70DBD0579007367D8 /* French */,
 				2876ACFD0DBD2F7900731E2A /* Italian */,
 				28B560340DEC0528002A561D /* zh_TW */,
-				2817B7060DED672F00B9D1A1 /* Dutch */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -477,7 +470,6 @@
 				2829A4C90DBD0584007367D8 /* French */,
 				2876AD000DBD2F8C00731E2A /* Italian */,
 				28B560350DEC0528002A561D /* zh_TW */,
-				2817B70A0DED674D00B9D1A1 /* Dutch */,
 			);
 			name = MainMenu.nib;
 			sourceTree = "<group>";
