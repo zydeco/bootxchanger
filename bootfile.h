@@ -3,7 +3,7 @@
  *  BootXChanger
  *
  *  Created by Zydeco on 2007-12-07.
- *  Copyright 2007-2008 namedfork.net. All rights reserved.
+ *  Copyright 2007-2009 namedfork.net. All rights reserved.
  *
  */
 

@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.0.2, ©2007-2008 namedfork.net</string>
+	<string>1.0.3, ©2007-2009 namedfork.net</string>
 	<key>CFBundleIconFile</key>
 	<string>BootXChanger.icns</string>
 	<key>CFBundleIdentifier</key>
@@ -23,11 +23,7 @@
 	<key>CFBundleSignature</key>
 	<string>BtXg</string>
 	<key>CFBundleVersion</key>
-	<string>42</string>
-	<!--<key>CFBundleHelpBookFolder</key>
-	<string>BootXChangerHelp</string>
-	<key>CFBundleHelpBookName</key>
-	<string>BootXChanger Help</string>-->
+	<string>45</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
