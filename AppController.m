@@ -285,7 +285,6 @@
 	}
 	[bitmap release];
 	[bootImage release];
-	[theImage release];
 	
 	// get image
 	clutData = [[NSData alloc] initWithBytes:clutBytes length:sizeof(clutBytes)];
