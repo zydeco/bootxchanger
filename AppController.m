@@ -289,14 +289,10 @@
 	// get image
 	clutData = [[NSData alloc] initWithBytes:clutBytes length:sizeof(clutBytes)];
 	imageData = [[NSData alloc] initWithBytes:pixelBytes length:sizeof(pixelBytes)];
-	if (currentClut) {
-		[currentClut release];
-		[currentImage release];
-	}
+	[currentClut release];
+	[currentImage release];
 	currentClut = clutData;
 	currentImage = imageData;
-	[currentClut retain];
-	[currentImage retain];
 	
 	// report validity
 	#if defined(__ppc__)
@@ -322,7 +318,7 @@
 	}
 	#endif
 	
-	[self installBootImage:currentImage palette:currentClut withTool:[toolPath UTF8String]];
+	[self installBootImage:currentImage palette:currentClut withTool:[toolPath fileSystemRepresentation]];
 }
 
 - (IBAction) openWebsite:(id)sender {
