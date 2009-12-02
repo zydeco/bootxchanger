@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.02">
+<archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.03">
 	<data>
 		<int key="IBDocument.SystemTarget">1040</int>
-		<string key="IBDocument.SystemVersion">9D34</string>
-		<string key="IBDocument.InterfaceBuilderVersion">670</string>
-		<string key="IBDocument.AppKitVersion">949.33</string>
-		<string key="IBDocument.HIToolboxVersion">352.00</string>
+		<string key="IBDocument.SystemVersion">9L31a</string>
+		<string key="IBDocument.InterfaceBuilderVersion">677</string>
+		<string key="IBDocument.AppKitVersion">949.54</string>
+		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="372"/>
@@ -14,6 +14,15 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<string>com.apple.InterfaceBuilderKit</string>
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+		</object>
+		<object class="NSMutableDictionary" key="IBDocument.Metadata">
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+			</object>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.RootObjects" id="1048">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -651,7 +660,7 @@
 						<object class="NSCustomView" id="198813824">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">-2147483353</int>
-							<string key="NSFrame">{{0, 207}, {328, 20}}</string>
+							<string key="NSFrame">{{0, 207}, {366, 20}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<string key="NSClassName">NFErrorStripe</string>
 						</object>
@@ -1685,7 +1694,6 @@
 					<string>29.WindowOrigin</string>
 					<string>29.editorWindowContentRectSynchronizationRect</string>
 					<string>371.IBEditorWindowLastContentRect</string>
-					<string>371.IBPluginDependency</string>
 					<string>371.IBWindowTemplateEditedContentRect</string>
 					<string>371.NSWindowTemplate.visibleAtLaunch</string>
 					<string>371.editorWindowContentRectSynchronizationRect</string>
@@ -1721,7 +1729,6 @@
 					<string>453.IBPluginDependency</string>
 					<string>454.IBPluginDependency</string>
 					<string>456.IBEditorWindowLastContentRect</string>
-					<string>456.IBPluginDependency</string>
 					<string>456.IBWindowTemplateEditedContentRect</string>
 					<string>456.NSWindowTemplate.visibleAtLaunch</string>
 					<string>456.editorWindowContentRectSynchronizationRect</string>
@@ -1731,6 +1738,7 @@
 					<string>458.IBPluginDependency</string>
 					<string>459.IBAttributePlaceholdersKey</string>
 					<string>459.IBPluginDependency</string>
+					<string>461.IBPluginDependency</string>
 					<string>481.IBPluginDependency</string>
 					<string>482.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
@@ -1850,7 +1858,6 @@
 					<string>{74, 862}</string>
 					<string>{{207, 794}, {418, 20}}</string>
 					<string>{{139, 506}, {366, 207}}</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{139, 506}, {366, 207}}</string>
 					<reference ref="9"/>
 					<string>{{217, 402}, {366, 207}}</string>
@@ -1922,7 +1929,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{196, 353}, {326, 157}}</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{196, 353}, {326, 157}}</string>
 					<reference ref="8"/>
 					<string>{{216, 238}, {326, 157}}</string>
@@ -1946,6 +1952,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 						</object>
 					</object>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

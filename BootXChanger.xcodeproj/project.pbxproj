@@ -108,6 +108,9 @@
 		2876ACFE0DBD2F7F00731E2A /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2876AD000DBD2F8C00731E2A /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		287D21FD0D0C6AAB00209716 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2887227710C6A09300FD5672 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2887227810C6A0DE00FD5672 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Japanese; path = Japanese.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2887227C10C6A54300FD5672 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		2887E5C90D0966BB004140B3 /* bootfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bootfile.h; sourceTree = "<group>"; };
 		2896A4CF0D5FAB110011B68D /* Hungarian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Hungarian; path = Hungarian.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		2896A4D00D5FAB290011B68D /* Hungarian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Hungarian; path = Hungarian.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -440,6 +443,7 @@
 				28B560320DEC0528002A561D /* zh_TW */,
 				280801B9102C36910077D2A6 /* Swedish */,
 				280801CA102C3D6C0077D2A6 /* Dutch */,
+				2887227810C6A0DE00FD5672 /* Japanese */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -457,6 +461,7 @@
 				28B560340DEC0528002A561D /* zh_TW */,
 				280801B8102C368C0077D2A6 /* Swedish */,
 				280801CB102C3D700077D2A6 /* Dutch */,
+				2887227710C6A09300FD5672 /* Japanese */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 				28B560350DEC0528002A561D /* zh_TW */,
 				280801B6102C367B0077D2A6 /* Swedish */,
 				280801CD102C3D790077D2A6 /* Dutch */,
+				2887227C10C6A54300FD5672 /* Japanese */,
 			);
 			name = MainMenu.nib;
 			sourceTree = "<group>";
