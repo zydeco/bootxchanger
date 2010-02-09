@@ -199,14 +199,10 @@
 	imageData = [fh readDataOfLength:bootIconSize];
 	[fh closeFile];
 	
-	if (currentClut) {
-		[currentClut release];
-		[currentImage release];
-	}
-	currentClut = clutData;
-	currentImage = imageData;
-	[currentClut retain];
-	[currentImage retain];
+	[currentClut release];
+	[currentImage release];
+	currentClut = [clutData retain];
+	currentImage = [imageData retain];
 	
 	return [self getBootImageFromData:imageData palette:clutData];
 }
@@ -337,12 +333,33 @@
 	NSMutableData			*newBootFile;
 	char					strLength[16];
 	
+    if (imageData == nil || clutData == nil) {
+        NSAlert *alert = [NSAlert alertWithMessageText:@"Cannot install boot image" defaultButton:NSLocalizedString(@"Quit",nil) alternateButton:nil otherButton:nil informativeTextWithFormat:@"imageData = %p, clutData = %p", imageData, clutData];
+        [alert setAlertStyle:NSCriticalAlertStyle];
+        [alert beginSheetModalForWindow:mainWindow 
+                          modalDelegate:self
+                         didEndSelector:@selector(alertEnded:returnCode:contextInfo:)
+                            contextInfo:NULL];
+        return 0;
+    }
+    
 	// prepare boot file
+    NSError *error = nil;
 	#if defined(__ppc__)
-	bootFile = [NSData dataWithContentsOfFile:@BOOTX_DEFAULT];
+	bootFile = [NSData dataWithContentsOfFile:@BOOTX_DEFAULT options:0 error:&error];
 	#elif defined(__i386__)
-	bootFile = [NSData dataWithContentsOfFile:@BOOTEFI_DEFAULT];
+	bootFile = [NSData dataWithContentsOfFile:@BOOTEFI_DEFAULT options:0 error:&error];
 	#endif
+    if (bootFile == nil) {
+        NSAlert *alert = [NSAlert alertWithError:error];
+        [alert addButtonWithTitle:NSLocalizedString(@"Quit",nil)];
+        [alert setAlertStyle:NSCriticalAlertStyle];
+        [alert beginSheetModalForWindow:mainWindow 
+                          modalDelegate:self
+                         didEndSelector:@selector(alertEnded:returnCode:contextInfo:)
+                            contextInfo:NULL];
+        return 0;
+    }
 	newBootFile = [bootFile mutableCopy];
 	
 	// get final image
