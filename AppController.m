@@ -169,7 +169,7 @@
 	[myImage addRepresentation:bitmap];
 	[bitmap release];
 	
-	return myImage;
+	return [myImage autorelease];
 }
 
 - (NSImage*)getDefaultBootImage {

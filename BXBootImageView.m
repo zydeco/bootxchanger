@@ -25,7 +25,6 @@
 - (IBAction)loadDefaultBootImage:(id)sender {
 	NSImage *bootImage = [mainController getDefaultBootImage];
     [super setImage:bootImage];
-	[bootImage release];
 	[applyButton setEnabled:YES];
 	[errView hide];
 }
@@ -33,7 +32,6 @@
 - (IBAction)loadSystemBootImage:(id)sender {
 	NSImage *bootImage = [mainController getSystemBootImage];
     [super setImage:bootImage];
-	[bootImage release];
 	[applyButton setEnabled:YES];
 	[errView hide];
 }
@@ -56,7 +54,6 @@
 		[errView hide];
 	}
 	[super setImage:bootImage];
-	[bootImage release];
 }
 
 @end
