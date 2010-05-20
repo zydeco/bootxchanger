@@ -7,25 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2800D8000CDD0D960027F887 /* bootlogo.act in Resources */ = {isa = PBXBuildFile; fileRef = 2800D7FE0CDD0D960027F887 /* bootlogo.act */; };
-		2800D8070CDD0DE70027F887 /* rle.c in Sources */ = {isa = PBXBuildFile; fileRef = 2800D8050CDD0DE70027F887 /* rle.c */; };
 		281A7D0D0D0C4FE700DD6E10 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 281A7D0B0D0C4FE700DD6E10 /* Credits.rtf */; };
-		281ECB390DB4A88D00626462 /* bootlogo.of in Resources */ = {isa = PBXBuildFile; fileRef = 281ECB370DB4A88D00626462 /* bootlogo.of */; };
-		281ECB3A0DB4A88D00626462 /* bootlogo.efi in Resources */ = {isa = PBXBuildFile; fileRef = 281ECB380DB4A88D00626462 /* bootlogo.efi */; };
 		28210AEB0CDF548500FAD3CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28210AEA0CDF548500FAD3CF /* Security.framework */; };
-		285AC1F20CDF6C2C008AF706 /* InstallBootImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AC1F10CDF6C2C008AF706 /* InstallBootImage.m */; };
-		285AC1F60CDF6C4A008AF706 /* InstallBootImage in CopyFiles */ = {isa = PBXBuildFile; fileRef = 285AC1ED0CDF6C17008AF706 /* InstallBootImage */; };
-		285E81070CE8846A00C3F538 /* ErrorStripeBG.tif in Resources */ = {isa = PBXBuildFile; fileRef = 285E81060CE8846A00C3F538 /* ErrorStripeBG.tif */; };
-		286CC4180CDCD5E900ACA824 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286CC4170CDCD5E900ACA824 /* AppController.m */; };
+		284A5C9E11A59F9100EAC012 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 284A5C9D11A59F9100EAC012 /* default.png */; };
+		284A5CAE11A5A07500EAC012 /* BXApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 284A5CAD11A5A07500EAC012 /* BXApplication.m */; };
 		286CC41C0CDCD61F00ACA824 /* BXBootImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 286CC41B0CDCD61F00ACA824 /* BXBootImageView.m */; };
-		289C935A0CE7966100323AC2 /* TinyAlert.tif in Resources */ = {isa = PBXBuildFile; fileRef = 289C93590CE7966100323AC2 /* TinyAlert.tif */; };
+		28D089B611A5DCBE001B092C /* InstallBootImage in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28D089AC11A5DC3C001B092C /* InstallBootImage */; };
+		28D08A2411A5E54D001B092C /* InstallBootImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285AC1F10CDF6C2C008AF706 /* InstallBootImage.m */; };
 		28D3C0F60CDE1C3A003F3018 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28D3C0F50CDE1C3A003F3018 /* Localizable.strings */; };
-		28D3C2380CDE40CB003F3018 /* clut.c in Sources */ = {isa = PBXBuildFile; fileRef = 28D3C2370CDE40CB003F3018 /* clut.c */; };
 		28EC99460D12CD7000F79EF9 /* BootXChanger.icns in Resources */ = {isa = PBXBuildFile; fileRef = 28EC99450D12CD7000F79EF9 /* BootXChanger.icns */; };
-		28EC99870D12F7BC00F79EF9 /* BootXChangerHelp in Resources */ = {isa = PBXBuildFile; fileRef = 28EC99860D12F7BC00F79EF9 /* BootXChangerHelp */; };
 		28F7B44D0D619039005E2AEA /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F7B44C0D619039005E2AEA /* Sparkle.framework */; };
 		28F7B46C0D61906A005E2AEA /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28F7B44C0D619039005E2AEA /* Sparkle.framework */; };
-		28FFC9E80CE7A104001BA66E /* NFErrorStripe.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FFC9E70CE7A104001BA66E /* NFErrorStripe.m */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -33,11 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		285AC1F40CDF6C45008AF706 /* PBXContainerItemProxy */ = {
+		28D089B411A5DCB9001B092C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 285AC1EC0CDF6C17008AF706;
+			remoteGlobalIDString = 28D089AB11A5DC3C001B092C;
 			remoteInfo = InstallBootImage;
 		};
 /* End PBXContainerItemProxy section */
@@ -49,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				285AC1F60CDF6C4A008AF706 /* InstallBootImage in CopyFiles */,
+				28D089B611A5DCBE001B092C /* InstallBootImage in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,15 +61,10 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		2800D7FE0CDD0D960027F887 /* bootlogo.act */ = {isa = PBXFileReference; lastKnownFileType = file; name = bootlogo.act; path = Resources/bootlogo.act; sourceTree = "<group>"; };
-		2800D8050CDD0DE70027F887 /* rle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rle.c; sourceTree = "<group>"; };
-		2800D8060CDD0DE70027F887 /* rle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rle.h; sourceTree = "<group>"; };
 		280801B6102C367B0077D2A6 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Swedish; path = Swedish.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		280801B7102C36860077D2A6 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Swedish; path = Swedish.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		280801B8102C368C0077D2A6 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Swedish; path = Swedish.lproj/Localizable.strings; sourceTree = "<group>"; };
 		280801B9102C36910077D2A6 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Swedish; path = Swedish.lproj/Credits.rtf; sourceTree = "<group>"; };
-		280801BA102C36A50077D2A6 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Swedish; path = Swedish.lproj/BootXChangerHelp; sourceTree = "<group>"; };
-		280801C7102C3D660077D2A6 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Dutch; path = Dutch.lproj/BootXChangerHelp; sourceTree = "<group>"; };
 		280801CA102C3D6C0077D2A6 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Dutch; path = Dutch.lproj/Credits.rtf; sourceTree = "<group>"; };
 		280801CB102C3D700077D2A6 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
 		280801CC102C3D750077D2A6 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -86,23 +73,17 @@
 		281A7D090D0C4F4C00DD6E10 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
 		281A7D0C0D0C4FE700DD6E10 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		281A7D100D0C519300DD6E10 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Spanish; path = Spanish.lproj/Credits.rtf; sourceTree = "<group>"; };
-		281ECB370DB4A88D00626462 /* bootlogo.of */ = {isa = PBXFileReference; lastKnownFileType = file; name = bootlogo.of; path = Resources/bootlogo.of; sourceTree = "<group>"; };
-		281ECB380DB4A88D00626462 /* bootlogo.efi */ = {isa = PBXFileReference; lastKnownFileType = file; name = bootlogo.efi; path = Resources/bootlogo.efi; sourceTree = "<group>"; };
 		28210AEA0CDF548500FAD3CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
-		2829A4BB0DBD0541007367D8 /* French */ = {isa = PBXFileReference; lastKnownFileType = folder; name = French; path = French.lproj/BootXChangerHelp; sourceTree = "<group>"; };
 		2829A4BE0DBD0548007367D8 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = French; path = French.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2829A4C70DBD0579007367D8 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2829A4C80DBD057F007367D8 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2829A4C90DBD0584007367D8 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		2857FF680DBBA00D008A26FA /* SendBugReport.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = SendBugReport.applescript; sourceTree = "<group>"; };
-		285AC1ED0CDF6C17008AF706 /* InstallBootImage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InstallBootImage; sourceTree = BUILT_PRODUCTS_DIR; };
+		284A5C9D11A59F9100EAC012 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = Resources/default.png; sourceTree = "<group>"; };
+		284A5CAC11A5A07500EAC012 /* BXApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXApplication.h; sourceTree = "<group>"; };
+		284A5CAD11A5A07500EAC012 /* BXApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXApplication.m; sourceTree = "<group>"; };
 		285AC1F10CDF6C2C008AF706 /* InstallBootImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstallBootImage.m; sourceTree = "<group>"; };
-		285E81060CE8846A00C3F538 /* ErrorStripeBG.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = ErrorStripeBG.tif; path = Resources/ErrorStripeBG.tif; sourceTree = "<group>"; };
-		286CC4160CDCD5E900ACA824 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		286CC4170CDCD5E900ACA824 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		286CC41A0CDCD61F00ACA824 /* BXBootImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXBootImageView.h; sourceTree = "<group>"; };
 		286CC41B0CDCD61F00ACA824 /* BXBootImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXBootImageView.m; sourceTree = "<group>"; };
-		2876ACEE0DBD2ED600731E2A /* Italian */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Italian; path = Italian.lproj/BootXChangerHelp; sourceTree = "<group>"; };
 		2876ACF10DBD2EDE00731E2A /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Italian; path = Italian.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2876ACFD0DBD2F7900731E2A /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2876ACFE0DBD2F7F00731E2A /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -111,37 +92,30 @@
 		2887227710C6A09300FD5672 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2887227810C6A0DE00FD5672 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Japanese; path = Japanese.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2887227C10C6A54300FD5672 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		2887E5C90D0966BB004140B3 /* bootfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bootfile.h; sourceTree = "<group>"; };
 		2896A4CF0D5FAB110011B68D /* Hungarian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Hungarian; path = Hungarian.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		2896A4D00D5FAB290011B68D /* Hungarian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Hungarian; path = Hungarian.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2896A4D10D5FAB300011B68D /* Hungarian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Hungarian; path = Hungarian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2896A4D20D5FAB350011B68D /* Hungarian */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Hungarian; path = Hungarian.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2896A4D30D5FAB390011B68D /* Hungarian */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Hungarian; path = Hungarian.lproj/BootXChangerHelp; sourceTree = "<group>"; };
-		289C93590CE7966100323AC2 /* TinyAlert.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = TinyAlert.tif; path = Resources/TinyAlert.tif; sourceTree = "<group>"; };
 		28B560320DEC0528002A561D /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = zh_TW; path = zh_TW.lproj/Credits.rtf; sourceTree = "<group>"; };
 		28B560330DEC0528002A561D /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28B560340DEC0528002A561D /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/Localizable.strings; sourceTree = "<group>"; };
 		28B560350DEC0528002A561D /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = zh_TW; path = zh_TW.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		28B5603C0DEC057A002A561D /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zh_TW; path = zh_TW.lproj/BootXChangerHelp; sourceTree = "<group>"; };
-		28CCA5790D65E3B300806D11 /* German */ = {isa = PBXFileReference; lastKnownFileType = folder; name = German; path = German.lproj/BootXChangerHelp; sourceTree = "<group>"; };
 		28CCA57C0D65E3B800806D11 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = German; path = German.lproj/Credits.rtf; sourceTree = "<group>"; };
 		28CCA57E0D65E3C500806D11 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
 		28CCA5800D65E3CF00806D11 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28CCA5810D65E3D800806D11 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		28D089AC11A5DC3C001B092C /* InstallBootImage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InstallBootImage; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D3C0F30CDE1C25003F3018 /* English */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; fileEncoding = 4; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
-		28D3C2360CDE40CB003F3018 /* clut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clut.h; sourceTree = "<group>"; };
-		28D3C2370CDE40CB003F3018 /* clut.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clut.c; sourceTree = "<group>"; };
+		28DFB7A511A6044E00550AE1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = "en-GB"; path = "en-GB.lproj/MainMenu.nib"; sourceTree = "<group>"; };
+		28DFB7A911A6047E00550AE1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		28DFB7AB11A6048900550AE1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		28DFB7AC11A604C600550AE1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "en-GB"; path = "en-GB.lproj/Credits.rtf"; sourceTree = "<group>"; };
 		28EC99450D12CD7000F79EF9 /* BootXChanger.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = BootXChanger.icns; path = Resources/BootXChanger.icns; sourceTree = "<group>"; };
-		28EC99830D12F7B800F79EF9 /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = English.lproj/BootXChangerHelp; sourceTree = "<group>"; };
-		28EC99890D12F7C700F79EF9 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Spanish; path = Spanish.lproj/BootXChangerHelp; sourceTree = "<group>"; };
 		28F7B44C0D619039005E2AEA /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		28F9874A0DB619AD00B7F78F /* Russian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Russian; path = Russian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28F9874C0DB619E300B7F78F /* Russian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Russian; path = Russian.lproj/Localizable.strings; sourceTree = "<group>"; };
 		28F9874F0DB619F000B7F78F /* Russian */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Russian; path = Russian.lproj/Credits.rtf; sourceTree = "<group>"; };
-		28F987500DB619F800B7F78F /* Russian */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Russian; path = Russian.lproj/BootXChangerHelp; sourceTree = "<group>"; };
 		28F987540DB61A1000B7F78F /* Russian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Russian; path = Russian.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		28FFC9E60CE7A104001BA66E /* NFErrorStripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFErrorStripe.h; sourceTree = "<group>"; };
-		28FFC9E70CE7A104001BA66E /* NFErrorStripe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFErrorStripe.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -152,7 +126,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		285AC1EB0CDF6C17008AF706 /* Frameworks */ = {
+		28D089AA11A5DC3C001B092C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -175,13 +149,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2887E5C90D0966BB004140B3 /* bootfile.h */,
-				286CC4160CDCD5E900ACA824 /* AppController.h */,
-				286CC4170CDCD5E900ACA824 /* AppController.m */,
 				286CC41A0CDCD61F00ACA824 /* BXBootImageView.h */,
 				286CC41B0CDCD61F00ACA824 /* BXBootImageView.m */,
-				28FFC9E60CE7A104001BA66E /* NFErrorStripe.h */,
-				28FFC9E70CE7A104001BA66E /* NFErrorStripe.m */,
+				284A5CAC11A5A07500EAC012 /* BXApplication.h */,
+				284A5CAD11A5A07500EAC012 /* BXApplication.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -210,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* BootXChanger.app */,
-				285AC1ED0CDF6C17008AF706 /* InstallBootImage */,
+				28D089AC11A5DC3C001B092C /* InstallBootImage */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,12 +201,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				2857FF680DBBA00D008A26FA /* SendBugReport.applescript */,
 				285AC1F10CDF6C2C008AF706 /* InstallBootImage.m */,
-				28D3C2360CDE40CB003F3018 /* clut.h */,
-				28D3C2370CDE40CB003F3018 /* clut.c */,
-				2800D8050CDD0DE70027F887 /* rle.c */,
-				2800D8060CDD0DE70027F887 /* rle.h */,
 				32CA4F630368D1EE00C91783 /* BootXChanger_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -245,14 +211,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				281ECB370DB4A88D00626462 /* bootlogo.of */,
-				281ECB380DB4A88D00626462 /* bootlogo.efi */,
-				28EC99860D12F7BC00F79EF9 /* BootXChangerHelp */,
+				284A5C9D11A59F9100EAC012 /* default.png */,
 				28EC99450D12CD7000F79EF9 /* BootXChanger.icns */,
 				281A7D0B0D0C4FE700DD6E10 /* Credits.rtf */,
-				285E81060CE8846A00C3F538 /* ErrorStripeBG.tif */,
-				289C93590CE7966100323AC2 /* TinyAlert.tif */,
-				2800D7FE0CDD0D960027F887 /* bootlogo.act */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				28D3C0F50CDE1C3A003F3018 /* Localizable.strings */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -273,12 +234,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		285AC1EC0CDF6C17008AF706 /* InstallBootImage */ = {
+		28D089AB11A5DC3C001B092C /* InstallBootImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 285AC1F30CDF6C2C008AF706 /* Build configuration list for PBXNativeTarget "InstallBootImage" */;
+			buildConfigurationList = 28D089B211A5DC6D001B092C /* Build configuration list for PBXNativeTarget "InstallBootImage" */;
 			buildPhases = (
-				285AC1EA0CDF6C17008AF706 /* Sources */,
-				285AC1EB0CDF6C17008AF706 /* Frameworks */,
+				28D089A911A5DC3C001B092C /* Sources */,
+				28D089AA11A5DC3C001B092C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,7 +247,7 @@
 			);
 			name = InstallBootImage;
 			productName = InstallBootImage;
-			productReference = 285AC1ED0CDF6C17008AF706 /* InstallBootImage */;
+			productReference = 28D089AC11A5DC3C001B092C /* InstallBootImage */;
 			productType = "com.apple.product-type.tool";
 		};
 		8D1107260486CEB800E47090 /* BootXChanger */ = {
@@ -298,12 +259,11 @@
 				28F7B4710D619077005E2AEA /* CopyFiles */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				2857FF7C0DBBA059008A26FA /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				285AC1F50CDF6C45008AF706 /* PBXTargetDependency */,
+				28D089B511A5DCB9001B092C /* PBXTargetDependency */,
 			);
 			name = BootXChanger;
 			productInstallPath = "$(HOME)/Applications";
@@ -332,13 +292,16 @@
 				zh_TW,
 				Dutch,
 				Swedish,
+				"British English",
+				"en-GB",
+				zh_CN,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* BootXChanger */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* BootXChanger */,
-				285AC1EC0CDF6C17008AF706 /* InstallBootImage */,
+				28D089AB11A5DC3C001B092C /* InstallBootImage */,
 			);
 		};
 /* End PBXProject section */
@@ -348,44 +311,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289C935A0CE7966100323AC2 /* TinyAlert.tif in Resources */,
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				2800D8000CDD0D960027F887 /* bootlogo.act in Resources */,
 				28D3C0F60CDE1C3A003F3018 /* Localizable.strings in Resources */,
-				285E81070CE8846A00C3F538 /* ErrorStripeBG.tif in Resources */,
 				281A7D0D0D0C4FE700DD6E10 /* Credits.rtf in Resources */,
 				28EC99460D12CD7000F79EF9 /* BootXChanger.icns in Resources */,
-				28EC99870D12F7BC00F79EF9 /* BootXChangerHelp in Resources */,
-				281ECB390DB4A88D00626462 /* bootlogo.of in Resources */,
-				281ECB3A0DB4A88D00626462 /* bootlogo.efi in Resources */,
+				284A5C9E11A59F9100EAC012 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2857FF7C0DBBA059008A26FA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ ! -d $TARGET_BUILD_DIR/$SCRIPTS_FOLDER_PATH ]\nthen\n\tmkdir $TARGET_BUILD_DIR/$SCRIPTS_FOLDER_PATH\nfi\nosacompile -d -o $TARGET_BUILD_DIR/$SCRIPTS_FOLDER_PATH/SendBugReport.scpt SendBugReport.applescript";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		285AC1EA0CDF6C17008AF706 /* Sources */ = {
+		28D089A911A5DC3C001B092C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285AC1F20CDF6C2C008AF706 /* InstallBootImage.m in Sources */,
+				28D08A2411A5E54D001B092C /* InstallBootImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,21 +336,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				286CC4180CDCD5E900ACA824 /* AppController.m in Sources */,
 				286CC41C0CDCD61F00ACA824 /* BXBootImageView.m in Sources */,
-				2800D8070CDD0DE70027F887 /* rle.c in Sources */,
-				28D3C2380CDE40CB003F3018 /* clut.c in Sources */,
-				28FFC9E80CE7A104001BA66E /* NFErrorStripe.m in Sources */,
+				284A5CAE11A5A07500EAC012 /* BXApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		285AC1F50CDF6C45008AF706 /* PBXTargetDependency */ = {
+		28D089B511A5DCB9001B092C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 285AC1EC0CDF6C17008AF706 /* InstallBootImage */;
-			targetProxy = 285AC1F40CDF6C45008AF706 /* PBXContainerItemProxy */;
+			target = 28D089AB11A5DC3C001B092C /* InstallBootImage */;
+			targetProxy = 28D089B411A5DCB9001B092C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -426,6 +365,7 @@
 				28B560330DEC0528002A561D /* zh_TW */,
 				280801B7102C36860077D2A6 /* Swedish */,
 				280801CC102C3D750077D2A6 /* Dutch */,
+				28DFB7A911A6047E00550AE1 /* en-GB */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -444,6 +384,7 @@
 				280801B9102C36910077D2A6 /* Swedish */,
 				280801CA102C3D6C0077D2A6 /* Dutch */,
 				2887227810C6A0DE00FD5672 /* Japanese */,
+				28DFB7AC11A604C600550AE1 /* en-GB */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -462,25 +403,9 @@
 				280801B8102C368C0077D2A6 /* Swedish */,
 				280801CB102C3D700077D2A6 /* Dutch */,
 				2887227710C6A09300FD5672 /* Japanese */,
+				28DFB7AB11A6048900550AE1 /* en-GB */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		28EC99860D12F7BC00F79EF9 /* BootXChangerHelp */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28EC99830D12F7B800F79EF9 /* English */,
-				28EC99890D12F7C700F79EF9 /* Spanish */,
-				2896A4D30D5FAB390011B68D /* Hungarian */,
-				28CCA5790D65E3B300806D11 /* German */,
-				28F987500DB619F800B7F78F /* Russian */,
-				2829A4BB0DBD0541007367D8 /* French */,
-				2876ACEE0DBD2ED600731E2A /* Italian */,
-				28B5603C0DEC057A002A561D /* zh_TW */,
-				280801BA102C36A50077D2A6 /* Swedish */,
-				280801C7102C3D660077D2A6 /* Dutch */,
-			);
-			name = BootXChangerHelp;
 			sourceTree = "<group>";
 		};
 		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
@@ -497,6 +422,7 @@
 				280801B6102C367B0077D2A6 /* Swedish */,
 				280801CD102C3D790077D2A6 /* Dutch */,
 				2887227C10C6A54300FD5672 /* Japanese */,
+				28DFB7A511A6044E00550AE1 /* en-GB */,
 			);
 			name = MainMenu.nib;
 			sourceTree = "<group>";
@@ -504,9 +430,10 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		285AC1EF0CDF6C17008AF706 /* Debug */ = {
+		28D089AE11A5DC3D001B092C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -523,13 +450,13 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = InstallBootImage;
-				ZERO_LINK = YES;
 			};
 			name = Debug;
 		};
-		285AC1F00CDF6C17008AF706 /* Release */ = {
+		28D089AF11A5DC3D001B092C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -596,6 +523,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
@@ -606,26 +534,26 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				GCC_ENABLE_OBJC_GC = NO;
+				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		285AC1F30CDF6C2C008AF706 /* Build configuration list for PBXNativeTarget "InstallBootImage" */ = {
+		28D089B211A5DC6D001B092C /* Build configuration list for PBXNativeTarget "InstallBootImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				285AC1EF0CDF6C17008AF706 /* Debug */,
-				285AC1F00CDF6C17008AF706 /* Release */,
+				28D089AE11A5DC3D001B092C /* Debug */,
+				28D089AF11A5DC3D001B092C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

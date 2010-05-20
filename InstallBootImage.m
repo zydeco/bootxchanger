@@ -1,9 +1,9 @@
 /*
- *  InstallBootImage.m
+ *  InstallBootImage.c
  *  BootXChanger
  *
  *  Created by Zydeco on 2007-11-05.
- *  Copyright 2007-2009 namedfork.net. All rights reserved.
+ *  Copyright 2007-2010 namedfork.net. All rights reserved.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,91 +20,76 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#include "bootfile.h"
-#include <unistd.h>
+#define DEFAULT_COLOR 12566463
 
-// usage: InstallBootImage path length
-//		  then write the boot file to the tool's stdin
+// usage: InstallBootImage color [image]
+//		  color as integer
+//        path to image
 
-OSErr SetFileLocked (const FSRef *ref, int lockStatus);
+static NSString *bootPlistPath = @"/Library/Preferences/SystemConfiguration/com.apple.Boot.plist";
+static NSString *bootLogoPath = @"/System/Library/CoreServices/BootLogo.png";
+
+BOOL InstallBootImage(int color, NSString *path);
 
 int main (int argc, char ** argv) {
-	// unlock the file, write it, and lock it back
-	FSRef				bootFile;
-	HFSUniStr255		forkName;
-	OSErr				err;
-	SInt16				forkRef = 0;
-	char				*fileData;
-	size_t				fileSize = 0, writtenBytes = 0;
-	
-	// validate arguemtns
-	if (argc != 3) return 1;
-	if (strcmp(argv[1],BOOTX_CURRENT) && strcmp(argv[1],BOOTEFI_CURRENT)) return 1;
-	if (FSPathMakeRef((UInt8*)argv[1], &bootFile, NULL) != noErr) return 2;
-	fileSize = strtol(argv[2], NULL, 10);
-	fileData = malloc(fileSize);
-	
-	NSLog(@"Writing %d bytes to %s", fileSize, argv[1]);
-	
-	// read data
-	if (fread(fileData, fileSize, 1, stdin) == 0) {
-		NSLog(@"[!!!] Unexpected end of data");
-		free(fileData);
-		return 5;
-	}
-	
-	// open file	
-	if (SetFileLocked(&bootFile, 0)) {
-		NSLog(@"SetFileLocked error");
-		free(fileData);
-		return 3;
-	}
-	FSGetDataForkName(&forkName);
-	err = FSOpenFork(&bootFile, forkName.length, forkName.unicode, fsWrPerm, &forkRef);
-	if (err) {
-		NSLog(@"FSOpenFork: error %d", err);
-		SetFileLocked(&bootFile, 1);
-		free(fileData);
-		return 3;
-	}
-	
-	// write data
-	err = FSWriteFork(forkRef, fsFromStart, 0, (ByteCount)fileSize, fileData, &writtenBytes);
-	if (err || writtenBytes != fileSize) {
-		NSLog(@"FSWriteFork: error %d, wrote %d bytes", err, writtenBytes);
-		FSCloseFork(forkRef);
-		SetFileLocked(&bootFile, 1);
-		free(fileData);
-		return 4;
-	}
-	
-	// close file
-	free(fileData);
-	FSCloseFork(forkRef);
-	SetFileLocked(&bootFile, 1);
-	
-	return 0;
+	// validate arguments
+	if (argc != 3 && argc != 2) return EXIT_FAILURE;
+	NSAutoreleasePool *pool = [NSAutoreleasePool new];
+	int color = strtol(argv[1], NULL, 10);
+	NSString *path = nil;
+	if (argc == 3) path = [NSString stringWithUTF8String:argv[2]];
+	int err = InstallBootImage(color, path)?EXIT_SUCCESS:EXIT_FAILURE;
+	if (argc == 3) unlink(argv[2]);
+	[pool release];
+	return err;
 }
 
-OSErr SetFileLocked (const FSRef *ref, int lockStatus) {
-	FSCatalogInfo		catInfo;
-	OSErr				err;
-	
-	err = FSGetCatalogInfo(ref, kFSCatInfoNodeFlags, &catInfo, NULL, NULL, NULL);
-	if (err != noErr) {
-		NSLog(@"FSGetCatalogInfo: error %d", err);
-		return err;
+BOOL InstallBootImage(int color, NSString *path) {
+	// read property list
+	NSData *plistData = [NSData dataWithContentsOfFile:bootPlistPath];
+	if (plistData == nil) return NO;
+	NSString *err = nil;
+	NSMutableDictionary *bootPlist = [NSPropertyListSerialization propertyListFromData:plistData mutabilityOption:NSPropertyListMutableContainersAndLeaves format:NULL errorDescription:&err];
+	if (bootPlist == nil) {
+		NSLog(@"propertyListFromData: %@", err);
+		[err release];
+		return NO;
 	}
 	
-	if (lockStatus) 
-		catInfo.nodeFlags |= kFSNodeLockedMask;
-	else
-		catInfo.nodeFlags &= ~kFSNodeLockedMask;
+	// set color
+	if (color == DEFAULT_COLOR) [bootPlist removeObjectForKey:@"Background Color"];
+	else [bootPlist setObject:[NSNumber numberWithInt:color] forKey:@"Background Color"];
 	
-	err = FSSetCatalogInfo(ref, kFSCatInfoNodeFlags, &catInfo);
-	if (err != noErr) {
-		NSLog(@"FSSetCatalogInfo: error %d", err);
-		return err;
+	// set image
+	if (path == nil) [bootPlist removeObjectForKey:@"Boot Logo"];
+	else {
+		NSData *bootLogo = [NSData dataWithContentsOfFile:path];
+		if (bootLogo == nil) {
+			NSLog(@"Could not find boot image");
+			return NO;
+		}
+		if (![bootLogo writeToFile:bootLogoPath atomically:YES]) {
+			NSLog(@"Could not write boot image");
+			return NO;
+		}
+		NSMutableString *bootLogoPathEFI = [NSMutableString stringWithString:bootLogoPath];
+		[bootLogoPathEFI replaceOccurrencesOfString:@"/" withString:@"\\" options:NSLiteralSearch range:NSMakeRange(0, [bootLogoPathEFI length])];
+		[bootPlist setObject:bootLogoPathEFI forKey:@"Boot Logo"];
+		
 	}
-	return noErr;
+	
+	// write new file
+	plistData = [NSPropertyListSerialization dataFromPropertyList:bootPlist format:NSPropertyListXMLFormat_v1_0 errorDescription:&err];
+	if (plistData == nil) {
+		NSLog(@"dataFromPropertyList: %@", err);
+		[err release];
+		return NO;
+	}
+	if (![plistData writeToFile:bootPlistPath atomically:YES]) {
+		NSLog(@"could not write com.apple.Boot.plist");
+		return NO;
+	}
+	
+	// at last
+	return YES;
 }
